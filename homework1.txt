@@ -1,0 +1,58 @@
+/* Skip Link Styles */
+.skip-link {
+    position: absolute;
+    top: -40px; /* Hide off-screen */
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 0; /* Move into view when focused */
+}
+
+/* Commented out existing styling for li elements */
+/*
+li {
+    list-style-type: none;
+}
+*/
+
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+nav img {
+    width: 10%; /* Style only the image in the nav */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%); /* Two columns, each 40% */
+    gap: 20px; /* Adjust gap between grid items */
+}
+
+.grid img {
+    width: 100%; /* Images in the grid class */
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Adjust alignment */
+}
+
+.flex-item {
+    flex: 1 1 30%; /* Flex items with a base width of 30% */
+    margin: 10px; /* Add margin around flex items */
+}
+
+/* Additional styles for alignment and spacing */
+.grid {
+    justify-content: center; /* Center grid items */
+    align-items: center; /* Align items vertically */
+    row-gap: 20px; /* Space between rows */
+}
